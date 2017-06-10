@@ -11,6 +11,7 @@
 #import "LoginViewController.h"
 #import "JJSMSCell.h"
 #import "JJMapViewController.h"
+#import "JJQRViewController.h"
 
 
 #define kWaveViewH 200
@@ -112,6 +113,10 @@ static NSString *tableViewReuseIdentifier = @"UITableViewCell";
         JJMapViewController *mapView = [[JJMapViewController alloc] init];
         [self.navigationController pushViewController:mapView animated:YES];
         return;
+    }else if(indexPath.row == 2){
+        JJQRViewController *vc = [[JJQRViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
     }
     JJOCJSViewController *vc = [JJOCJSViewController new];
     [self.navigationController pushViewController:vc animated:YES];
@@ -144,6 +149,9 @@ static NSString *tableViewReuseIdentifier = @"UITableViewCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tableViewReuseIdentifier forIndexPath:indexPath];
     if (indexPath.row == 1) {
         cell.textLabel.text = @"点击进入系统地图";
+        return cell;
+    }else if(indexPath.row == 2){
+        cell.textLabel.text = @"点击进入二维码扫描";
         return cell;
     }
     cell.textLabel.text = [NSString stringWithFormat:@"这是第%zd行",indexPath.row + 1];

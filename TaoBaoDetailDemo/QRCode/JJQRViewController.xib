@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JJQRViewController">
+            <connections>
+                <outlet property="imageQR" destination="QAG-of-pqL" id="28P-BC-cQh"/>
+                <outlet property="textField" destination="UcP-3t-z8c" id="obs-jD-gBM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="请输入网站不包含http://" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UcP-3t-z8c">
+                    <rect key="frame" x="99" y="95" width="176" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="go" translatesAutoresizingMaskIntoConstraints="NO" id="QAG-of-pqL">
+                    <rect key="frame" x="67" y="251" width="240" height="236"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="236" id="JEs-kH-Ubz"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEk-QI-Z4r">
+                    <rect key="frame" x="149" y="139" width="77" height="30"/>
+                    <state key="normal" title="生成二维码"/>
+                    <connections>
+                        <action selector="createQRimageBtn:" destination="-1" eventType="touchUpInside" id="Cql-0n-f7V"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tEk-QI-Z4r" firstAttribute="top" secondItem="UcP-3t-z8c" secondAttribute="bottom" constant="14" id="Koa-KT-aTk"/>
+                <constraint firstItem="QAG-of-pqL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="67" id="Mjf-5H-xhS"/>
+                <constraint firstItem="UcP-3t-z8c" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="95" id="QkC-0Z-Q2P"/>
+                <constraint firstItem="QAG-of-pqL" firstAttribute="top" secondItem="tEk-QI-Z4r" secondAttribute="bottom" constant="82" id="aC3-z2-wVz"/>
+                <constraint firstItem="UcP-3t-z8c" firstAttribute="centerX" secondItem="tEk-QI-Z4r" secondAttribute="centerX" id="g1n-XX-6S9"/>
+                <constraint firstItem="UcP-3t-z8c" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pRV-6Q-7Je"/>
+                <constraint firstItem="tEk-QI-Z4r" firstAttribute="centerX" secondItem="QAG-of-pqL" secondAttribute="centerX" id="wVV-Gb-hlm"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="go" width="268" height="365"/>
+    </resources>
+</document>

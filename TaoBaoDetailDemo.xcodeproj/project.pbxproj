@@ -266,6 +266,8 @@
 		AC75D5AE1EE13F63002FA1BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC75D5AC1EE13F63002FA1BC /* Main.storyboard */; };
 		AC75D5B01EE13F63002FA1BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC75D5AF1EE13F63002FA1BC /* Assets.xcassets */; };
 		AC75D5B31EE13F63002FA1BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC75D5B11EE13F63002FA1BC /* LaunchScreen.storyboard */; };
+		ACAE74A81EEC196500FAB0B1 /* JJQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAE74A61EEC196500FAB0B1 /* JJQRViewController.m */; };
+		ACAE74A91EEC196500FAB0B1 /* JJQRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACAE74A71EEC196500FAB0B1 /* JJQRViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -798,6 +800,9 @@
 		AC75D5AF1EE13F63002FA1BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC75D5B21EE13F63002FA1BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC75D5B41EE13F63002FA1BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACAE74A51EEC196500FAB0B1 /* JJQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJQRViewController.h; sourceTree = "<group>"; };
+		ACAE74A61EEC196500FAB0B1 /* JJQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJQRViewController.m; sourceTree = "<group>"; };
+		ACAE74A71EEC196500FAB0B1 /* JJQRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJQRViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2028,6 +2033,7 @@
 				AC75D5A61EE13F63002FA1BC /* AppDelegate.h */,
 				AC75D5A71EE13F63002FA1BC /* AppDelegate.m */,
 				AC01805F1EEA54E300B60BAE /* index.html */,
+				ACAE74A41EEC190200FAB0B1 /* QRCode */,
 				AC75A8261EEABC280062FD5E /* BaiDuMap */,
 				AC75A8271EEABC280062FD5E /* Map */,
 				AC75A7441EEAA64A0062FD5E /* SMSUI */,
@@ -2053,6 +2059,16 @@
 				AC75D5A41EE13F63002FA1BC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACAE74A41EEC190200FAB0B1 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE74A51EEC196500FAB0B1 /* JJQRViewController.h */,
+				ACAE74A61EEC196500FAB0B1 /* JJQRViewController.m */,
+				ACAE74A71EEC196500FAB0B1 /* JJQRViewController.xib */,
+			);
+			path = QRCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2128,6 +2144,7 @@
 				AC75A6F41EEAA6380062FD5E /* LICENSE in Resources */,
 				AC75D5AE1EE13F63002FA1BC /* Main.storyboard in Resources */,
 				AC75A7391EEAA6380062FD5E /* HelpDeskUIResource.bundle in Resources */,
+				ACAE74A91EEC196500FAB0B1 /* JJQRViewController.xib in Resources */,
 				AC75A73C1EEAA6380062FD5E /* LoginViewController.xib in Resources */,
 				AC75A6F31EEAA6380062FD5E /* MWPhotoBrowser.bundle in Resources */,
 			);
@@ -2198,6 +2215,7 @@
 				AC75A71C1EEAA6380062FD5E /* HDRefreshTableViewController.m in Sources */,
 				AC75A7261EEAA6380062FD5E /* HDBubbleView+Image.m in Sources */,
 				AC75A6C21EEAA6380062FD5E /* MJRefreshBackGifFooter.m in Sources */,
+				ACAE74A81EEC196500FAB0B1 /* JJQRViewController.m in Sources */,
 				AC75A6C31EEAA6380062FD5E /* MJRefreshBackNormalFooter.m in Sources */,
 				AC75A6601EEAA6380062FD5E /* GettingMoreFooterView.m in Sources */,
 				AC75A6DC1EEAA6380062FD5E /* EMSDWebImagePrefetcher.m in Sources */,
